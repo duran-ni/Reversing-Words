@@ -54,3 +54,5 @@ La solución técnica se diseñó utilizando un enfoque funcional y declarativo,
 3. **`reverse()`**: Invierte el orden de los elementos del array (la última palabra pasa a ser la primera), cumpliendo directamente con el requisito de inversión.
 4. **`join(' ')`**: Concatena todos los elementos del array invertido en una nueva cadena de texto, insertando exactamente un único espacio en blanco entre cada palabra.
 
+# Captura Tests
+![Vitest Tests Passing](./src/assets/tests.png)
