@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular Word Reverser</title>
+  <link rel="stylesheet" href="/src/scss/main.scss">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center p-4">
+
+  <main class="word-reverser bg-slate-800 p-8 rounded-2xl shadow-2xl max-w-md w-full border border-slate-700">
+    <h1 class="word-reverser__title text-2xl font-bold text-center mb-6 text-indigo-400">Word Reverser</h1>
+    
+    <form id="reverserForm" class="word-reverser__form flex flex-col gap-4" novalidate>
+      <div class="flex flex-col gap-2">
+        <label for="textInput" class="word-reverser__label text-sm font-medium text-slate-400">Enter your text:</label>
+        <input 
+          type="text" 
+          id="textInput" 
+          class="word-reverser__input bg-slate-950 border border-slate-700 rounded-lg p-3 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"
+          placeholder="e.g.   Flying   to   Asturias   "
+          required
+        >
+      </div>
+
+      <button 
+        type="submit" 
+        class="word-reverser__button bg-indigo-600 hover:bg-indigo-500 text-white font-semibold p-3 rounded-lg transition-colors shadow-lg shadow-indigo-600/20"
+      >
+        Reverse Words
+      </button>
+    </form>
+
+    <section class="word-reverser__result-box mt-6 p-4 bg-slate-950 rounded-lg border border-slate-700/50 hidden" id="resultContainer">
+      <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Result:</h2>
+      <p id="resultText" class="word-reverser__result-text text-lg font-medium text-emerald-400 break-words"></p>
+    </section>
+  </main>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
