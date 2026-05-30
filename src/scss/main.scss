@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@use "base/reset";
+@use "components/word-reverser";
 
-@import "base/reset";
-@import "components/word-reverser";
+/* @import "tailwindcss"; */
+@import url("tailwindcss");
